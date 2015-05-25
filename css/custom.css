@@ -1,60 +1,200 @@
-.nav {
-	height: 100px;
+/*!
+ * Start Bootstrap - Business Casual Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background: url('../img/bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
-.nav li {
-	display: inline;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
-.nav .container {
-	position: relative;
-	top: 15px;
+p {
+    font-size: 1.25em;
+    line-height: 1.6;
+    color: #000;
 }
 
-.nav img {
-	height: 60px;
+hr {
+    max-width: 400px;
+    border-color: #999999;
 }
 
-.nav .container p {
-    height: 8px;
-    color: #94ce58;
-    margin-top: -5px;
+.brand,
+.address-bar {
+    display: none;
 }
 
-button {
-	font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
-    margin-top: 10px;
+.navbar-brand {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
 }
 
-.jumbotron {
-	background-image: url(http://www.zerotobeyond.com/wp-content/uploads/2015/05/highres_436824286-2-1024x576.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	/* background-color: #CCFFCC; */
+.navbar-nav {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
 }
 
-.jumbotron h1 {
-	font-family: "Century Schoolbook";
-	color: white;
-	text-shadow: 2px 2px #808080;
+.img-full {
+    min-width: 100%;
 }
 
-.jumbotron p {
-	font-family: Garamond;
-	color: white;
-	text-shadow: 2px 2px #808080;
+.brand-before,
+.brand-name {
+    text-transform: capitalize;
 }
 
-.legal li {
-	display: inline;
-	padding: 0px 50px 0px 0px;
+.brand-before {
+    margin: 15px 0;
+}
+
+.brand-name {
+    margin: 0;
+    font-size: 4em;
+}
+
+.tagline-divider {
+    margin: 15px auto 3px;
+    max-width: 250px;
+    border-color: #999999;
+}
+
+.box {
+    margin-bottom: 20px;
+    padding: 30px 15px;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+
+.intro-text {
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.img-border {
+    float: none;
+    margin: 0 auto 0;
+    border: #999999 solid 1px;
+}
+
+.img-left {
+    float: none;
+    margin: 0 auto 0;
+}
+
+footer {
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+
+footer p {
+    padding: 10px 0;
 }
 
 iframe {
-    display: block;
-    margin: auto;
-    align: middle;
-    width: 560px;
-    height: 315px;
-    border: none;
+        display: block;
+        margin: auto;
+        align: middle;
+        width: 560px;
+        height: 315px;
+        border: none;
+}
+
+@media screen and (min-width:768px) {
+    .brand {
+        display: inherit;
+        margin: 0;
+        padding: 30px 0 10px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 5em;
+        font-weight: 700;
+        line-height: normal;
+        color: #fff;
+    }
+
+    .top-divider {
+        margin-top: 0;
+    }
+
+    .img-left {
+        float: left;
+        margin-right: 25px;
+    }
+
+    .address-bar {
+        display: inherit;
+        margin: 0;
+        padding: 0 0 40px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        text-transform: uppercase;
+        font-size: 1.25em;
+        font-weight: 400;
+        letter-spacing: 3px;
+        color: #fff;
+    }
+
+    .navbar {
+        border-radius: 0;
+        min-height: 0;
+    }
+
+    .navbar-header {
+        display: none;
+    }
+
+    .navbar {
+    }
+
+    .navbar-default {
+        border: none;
+        background: #fff;
+        background: rgba(255,255,255,0.9);
+    }
+
+    .nav>li>a {
+        padding: 35px;
+    }
+
+    .navbar-nav>li>a {
+        line-height: normal;
+    }
+
+    .navbar-nav {
+        display: table;
+        float: none;
+        margin: -20px auto;
+        table-layout: fixed;
+        font-size: 1.25em;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .box:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
 }
