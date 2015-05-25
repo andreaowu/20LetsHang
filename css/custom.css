@@ -1,0 +1,50 @@
+/**/
+
+.nav {
+	height: 100px;
+}
+
+.nav li {
+	display: inline;
+}
+
+.nav .container {
+	position: relative;
+	top: 15px;
+}
+
+.nav img {
+	height: 50px;
+}
+
+button {
+	font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+	
+}
+
+.jumbotron {
+	background-image: url(http://www.zerotobeyond.com/wp-content/uploads/2015/05/highres_436824286-2-1024x576.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.jumbotron {
+	background-color: CCFFCC;
+}
+
+.jumbotron h1 {
+	font-family: "Century Schoolbook";
+	color: white;
+	text-shadow: 2px 2px #808080;
+}
+
+.jumbotron p {
+	font-family: Garamond;
+	color: white;
+	text-shadow: 2px 2px #808080;
+}
+
+.legal li {
+	display: inline;
+	padding: 0px 50px 0px 0px;
+}
