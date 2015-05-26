@@ -6,7 +6,8 @@
 
 body {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background: url('../img/bg.jpg') no-repeat center center fixed;
+    background: url('../img/bg.jpg') no-repeat center center fixed;/
+    /* background: url(http://www.zerotobeyond.com/wp-content/uploads/2015/05/highres_436824286-2-1024x576.jpg) no-repeat center center fixed; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -112,12 +113,16 @@ footer p {
 }
 
 iframe {
-        display: block;
-        margin: auto;
-        align: middle;
-        width: 560px;
-        height: 315px;
-        border: none;
+    display: block;
+    margin: auto;
+    align: middle;
+    width: 560px;
+    height: 315px;
+    border: none;
+}
+
+.col-lg-12 {
+    text-align:center;
 }
 
 @media screen and (min-width:768px) {
@@ -127,11 +132,11 @@ iframe {
         padding: 30px 0 10px;
         text-align: center;
         text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-        font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-family: "Josefin Slab";
         font-size: 5em;
         font-weight: 700;
         line-height: normal;
-        color: #fff;
+        color: #94ce58;
     }
 
     .top-divider {
