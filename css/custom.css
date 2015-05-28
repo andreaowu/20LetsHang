@@ -241,3 +241,9 @@ label {
     padding-left: 30px;
     padding-right: 30px;
 }
+
+#event {
+    width: 20%;
+    margin-top: -25px;
+    float: left;
+}
