@@ -223,13 +223,18 @@ label {
     margin: auto;
     padding-bottom: 15px;
     padding-top: 10px;
+    overflow: auto;
 }
 
-.event .row,
-.event button {
+.event .row {
     margin-top: -10px;
     padding-left: 30px;
     padding-right: 30px;
+    text-align: left;
+}
+
+.event button {
+    margin-top: 18px;
 }
 
 .event h4 {
@@ -242,12 +247,11 @@ label {
 }
 
 .event p {
-    padding-left: 10px;
+    padding-left: 8px;
 }
 
 #event {
     width: 20%;
-    margin-top: -25px;
     float: left;
 }
 
