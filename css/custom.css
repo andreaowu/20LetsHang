@@ -203,3 +203,16 @@ iframe {
         clear: both;
     }
 }
+
+label {
+    display: block;
+    text-align: center;
+}
+
+.form-group {
+    text-align: center;
+}
+
+.form-group option {
+    display: inline-block;
+}
