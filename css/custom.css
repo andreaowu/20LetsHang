@@ -216,3 +216,28 @@ label {
 .form-group option {
     display: inline-block;
 }
+
+.event {
+    border: 1px solid black;
+    width: 50%;
+    margin: auto;
+}
+
+.event .row,
+.event button {
+    margin-top: -10px;
+}
+
+.event h4 {
+    text-align: center;
+}
+
+.event h5 {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.event button {
+    padding-left: 30px;
+    padding-right: 30px;
+}
