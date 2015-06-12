@@ -364,27 +364,49 @@ label {
     right: 0px; 
 }
 
-.rating {
-    font-size: 36px;
-    direction: rtl;
+/****** Style Star Rating Widget *****/
+
+.rating { 
+    border: none;
     float: left;
 }
 
-.rating > span {
+.rating > input { display: none; } 
+.rating > label:before { 
+    margin: 5px;
+    font-size: 25px;
     display: inline-block;
-    position: relative;
-    width: 1.1em;
-}
-
-.rating > span:hover:before,
-.rating > span:hover ~ span:before {
     content: "\2605";
-    position: absolute;
 }
 
-/* #event-rating > span:hover:before,
-#event-rating > span:hover ~ span:before {
-    background-image: url("../img/heart.png");
-    background-size: 50%;
-    content: "";
-} */
+.rating > label { 
+    color: #AFAFAF; 
+    float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { 
+    color: #94CE58;
+} /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { 
+    color: #CAE6AC;
+} 
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background: #9B9B9B;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    background-image: url("../img/profilepic.png");
+    background-size: 80%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
